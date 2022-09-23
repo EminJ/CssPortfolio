@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}
+
+:root{
+    --bx-fontsize: 21pt;
+    --text-font: 16px;
+    --text-color: #31373B;
+}
+
+/*HEADER*/
+
+.header{
+    width: auto;
+    height: auto;
+    z-index: 10000;
+    margin-top: 1em;
+}
+
+._menu{
+    font-size: var(--bx-fontsize);
+    float: left;
+    width: 8%;
+    text-align: center;
+    height: 90px;
+}
+  
+._midspace {
+    float: left;
+    height: 90px;
+    width: 84%;
+}
+  
+._search{
+    font-size: var(--bx-fontsize);
+    float: left;
+    width: 8%;
+    text-align: center;
+    height: 90px;
+}
+
+/*SELECTION*/
+
+.home{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.menuleft{
+    width: 15%;
+    height: auto;
+    float: left;
+    margin-left: 2.5%;
+}
+.leftpage{
+    width: 35%;
+    margin-left: 3em;
+    height: auto;
+    float: left;
+}
+
+.leftbar ul{
+    text-align: center;
+}
+
+.leftbar li{
+    font-size: var(--text-font);
+    margin: 0.8em;
+    line-height: 2.3em;
+}
+
+.vline{
+    float: left;
+    height: 140px;
+    border-left: 3px solid lightgray;
+    margin-left: 3em;
+}
+
+#select{
+    text-decoration: underline;
+}
+
+.one-four{
+    float: left;
+    margin-left: 2.8em;
+    font-size: var(--text-font);
+}
+
+.space{
+    height: 6em;
+}
+
+.spaceplus{
+    height: 30em;
+}
+
+.textmenu{
+    margin-right: 10%;
+    width: 22.5%;
+    height: auto;
+    float: left;
+}
+
+.textmenu h2{
+    margin-top: 1em;
+    font-weight: 100;
+    font-size: var(--text-font);
+    color: var(--text-color);
+}
+.textmenu h1{
+    font-size: 30pt;
+    color: var(--text-color);
+}
+.textmenu p{
+    font-size: var(--text-font);
+    width: 100%;
+    height: auto;
+}
+.link{
+    text-decoration:underline;
+    font-weight: 600;
+}
+.textmenu img{
+    max-width:100%;
+    height: auto;
+}
+.textmenu li p{
+    margin-left: 2.5em;
+}
+
+
+/*IMAGE Coffee*/
+
+.panelarea{
+    z-index: -1;
+    width: 45%;
+    margin-left: 2.5%;
+    height: auto;
+    float: left;
+    margin-top: -7em;
+}
+
+.image{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.image .img{
+    min-width: 60%;
+    width: 100%;
+    height: auto;
+}
+
+.listarea{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.list{
+    margin-top: 290%;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+    line-height: 3em;
+    font-size: 14px;
+}
+
+.hideme_btn{
+    width: 240px;
+    height: 50px;
+    background-color: #02E696;
+    color: White;
+    text-align: center;
+    line-height: 50px; 
+    font-family: Calibri;
+    margin-top: 15px;
+}
+
+.hideme_btn:hover{
+    background-color: #109f6d;
+}
+
+@media screen and (max-width: 800px) {
+    ._menu, ._search {
+      width: 20%;
+    }
+    ._midspace{
+        width: 60%;
+    }
+    .menuleft{
+        display: none;
+    }
+    .textmenu{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .textmenu img{
+        margin: auto;
+    }
+    .textmenu p{
+        width: 90%;
+    }
+    .home{
+        background: url("Image/CoffeePhoto.jpg") no-repeat;
+    }
+    .panelarea{
+        margin: 2.5%;
+        width: 100%;
+    }
+    .image .img{
+        width: 30%;
+    }
+    .hideme_btn{
+        width: 35%;
+        height: 10%;
+        float: right;
+        font-size: 1.8ex;
+    }
+    .list{
+        margin: 0;
+        font-size: 12px;
+        margin-top: 7.5%;
+        width: 70%;
+    }
+}
